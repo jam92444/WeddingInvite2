@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nikah of Falak and Asif</title>
+<meta name="theme-color" content="#1a0207">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="stylesheet" href="styles.css">
+<noscript><style>.cover{display:none!important}.reveal{opacity:1!important;transform:none!important}</style></noscript>
+</head>
+<body class="locked">
+<section class="cover" id="cover" aria-labelledby="cvNames">
+  <div class="cover-in">
+    <p class="small" data-t="eventType">The Nikah of</p>
+    <h2 id="cvNames" class="names-sm" data-t="names">Falak weds Asif</h2>
+    <div class="stage" id="stage">
+      <div class="envelope" aria-hidden="true"><i class="env-paper"></i><i class="env-flap"></i><i class="env-front"></i></div>
+    </div>
+    <button class="btn" id="openBtn" type="button">Open invitation</button>
+    <button class="link" id="skipBtn" type="button" hidden>Skip</button>
+  </div>
+</section>
+
+<main id="main">
+  <section class="sec wine" id="hero">
+    <div class="col center">
+      <p class="small" data-t="eventType">The Nikah of</p>
+      <h1 tabindex="-1"><span data-t="bride">Falak</span><em>weds</em><span data-t="groom">Asif</span></h1>
+      <p class="hero-date" data-t="date">Friday, 20 November 2026</p>
+      <a class="cue" href="#letter" aria-label="Scroll to the invitation letter"><span></span></a>
+    </div>
+  </section>
+
+  <section class="sec velvet" id="letter">
+    <div class="col">
+      <div class="letter reveal" id="letterWrap">
+        <i class="lflap" aria-hidden="true"></i>
+        <article class="paper">
+          <p class="greet" id="greet"></p>
+          <div id="letterBody"></div>
+          <div class="families" id="families"></div>
+          <p class="sign" data-t="host">Mr. Mushtaq Ahmed</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec wine" id="date">
+    <div class="col center">
+      <div class="paper cal reveal">
+        <table id="calendar"></table>
+      </div>
+      <p class="when reveal"><strong data-t="date"></strong><br><span data-t="timeLabel"></span><br><span data-t="event"></span></p>
+      <div class="count reveal" id="count" aria-live="off">
+        <p class="status" id="status"></p>
+        <div class="units" id="units">
+          <div><b data-u="d">0</b><span>days</span></div><div><b data-u="h">0</b><span>hours</span></div><div><b data-u="m">0</b><span>minutes</span></div>
+        </div>
+      </div>
+      <button class="btn reveal" id="addCal" type="button">Add to calendar</button>
+    </div>
+  </section>
+
+  <section class="sec velvet" id="schedule">
+    <div class="col"><h2>The day</h2><ol class="timeline" id="timeline"></ol></div>
+  </section>
+
+  <section class="sec wine" id="venue">
+    <div class="col">
+      <div class="paper reveal venue-card">
+        <h2>Venue</h2>
+        <p class="vname" id="vName"></p><p id="vAddr"></p>
+        <div id="vMap"></div>
+        <a class="btn dark" id="mapLink" target="_blank" rel="noopener noreferrer">Open map</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec velvet" id="faq">
+    <div class="col"><h2>Good to know</h2><div id="faqList"></div></div>
+  </section>
+
+  <section class="sec wine closing" id="closing">
+    <div class="col center">
+      <p class="small" id="clLine"></p>
+      <p class="sig" id="clSign"></p>
+      <p class="hero-date" data-t="date"></p>
+      <p class="small">Contact</p>
+      <p id="phones"></p>
+    </div>
+  </section>
+</main>
+<script src="config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
